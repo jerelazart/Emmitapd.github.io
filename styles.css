@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+ 
+    max-width: 100%;
+}
+body {
+    margin: 0;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+.fondo{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 10%, rgba(0, 0, 0, 0.57) 51%, rgba(0, 0, 0, 0.46) 76%);
+    transform: translateX(-50%);
+}
+
+
+.imagen
+{
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+     
+        bottom: 100px;
+        
+    }
+
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position:relative;
+    left: -450px; /* Mueve el elemento 50 píxeles hacia la derecha */
+    top: 20px;  /* Mueve el elemento 20 píxeles hacia abajo */
+}
+
+.login-box {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 60px 68px 40px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 450px;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* Añade sombra para darle más profundidad */
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.input-group {
+    
+    margin-bottom: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px;
+    background: rgba(50, 50, 50, 0.2); /* Gris más oscuro con un poco de transparencia */
+    border: 1px solid rgba(200, 200, 200, 0.5); /* Bordes gris claro */
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+
+
+
+.input-group input::placeholder {
+    color: #8c8c8c;
+}
+
+.btn {
+    position:relative;
+    top: -27px;  /* Mueve el elemento 20 píxeles hacia abajo */
+    width: 100%;
+    padding: 11px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.btn:hover {
+    background-color: #f6121d;
+}
+
+.helper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox input {
+    position:relative;
+    top: 100px;  /* Mueve el elemento 20 píxeles hacia abajo */
+    margin-right: 5px;
+}
+
+.checkbox label {
+    position:relative;
+    top: 100px;  /* Mueve el elemento 20 píxeles hacia abajo */
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.forgot-password {
+    position:relative;
+    left: -70px;
+    top: 70px;  /* Mueve el elemento 20 píxeles hacia abajo */
+    color: #ffff;
+    font-size: 13px;
+    font-weight:bold;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    
+    font-family: 'Arial', sans-serif; /* Cambia a Arial */
+}
+
+.forgot-password:hover {
+    border-color: #b3b3b3;
+}
+
+.or-divider {
+    position:relative;
+    top: -70px;  /* Mueve el elemento 20 píxeles hacia abajo */
+    margin: 20px 0;
+    color: #b3b3b3;
+    font-size: 17px;
+}
+
+.btn-secondary {
+    position:relative;
+    top: -110px;  /* Mueve el elemento 20 píxeles hacia abajo */
+    width: 100%;
+    padding: 11px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+
+.btn-secondary:hover {
+    background-color: #444;
+}
+
+.first-time {
+    color: #b3b3b3;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.first-time strong {
+    color: white;
+    cursor: pointer;
+}
+
+.first-time strong:hover {
+    text-decoration: underline;
+}
+
+.recaptcha-text {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #8c8c8c;
+}
+
+.recaptcha-text a {
+    color: #0071eb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.recaptcha-text a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    z-index: 2;
+    margin-bottom: 700px;
+    margin-right: 700px;
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    display: block;
+
+}
