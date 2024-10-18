@@ -9,10 +9,6 @@ body, html {
 }
 
 body {
-    margin: 0;
-}
-
-body {
     display: block;
     margin: 8px;
 }
@@ -58,7 +54,7 @@ body {
     height: 100%;
     position: relative;
     left: -450px; /* Mueve el elemento 50 píxeles hacia la derecha */
-    top: 20px;  /* Mueve el elemento 20 píxeles hacia abajo */
+    top: 20px; /* Mueve el elemento 20 píxeles hacia abajo */
 }
 
 .login-box {
@@ -89,8 +85,8 @@ h1 {
 .input-group input {
     width: 100%;
     padding: 16px;
-    background: rgba(50, 50, 50, 0.2); /* Gris más oscuro con un poco de transparencia */
-    border: 1px solid rgba(200, 200, 200, 0.5); /* Bordes gris claro */
+    background: rgba(50, 50, 50, 0.2);
+    border: 1px solid rgba(200, 200, 200, 0.5);
     color: white;
     font-size: 16px;
     border-radius: 4px;
@@ -226,45 +222,35 @@ h1 {
     display: block;
 }
 
-/* Media Queries para Responsividad */
-@media (max-width: 600px) {
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
     .login-container {
-        flex-direction: column; /* Para que el contenedor se apile en móviles */
-        align-items: center; /* Centra el contenido */
-        left: 0; /* Quita el desplazamiento hacia la izquierda */
+        left: 0; /* Restablece el desplazamiento en móviles */
+        top: 0; /* Restablece la posición en móviles */
     }
 
     .login-box {
-        padding: 30px 20px; /* Ajustar el padding para móviles */
-        width: 90%; /* Ancho del 90% para móviles */
-        margin: 0 10px; /* Margen para evitar que toque los bordes */
-        position: relative; /* Quita el desplazamiento */
-        top: 0; /* Asegura que no haya desplazamiento */
+        padding: 40px 20px; /* Ajusta padding para móviles */
+        width: 90%; /* Cambiado a 90% para móviles */
+        max-width: 450px; /* Máxima anchura para móviles */
+        margin: 0 auto; /* Centra el login box */
     }
 
     h1 {
-        font-size: 24px; /* Ajustar tamaño de fuente */
+        font-size: 24px; /* Reduce el tamaño del encabezado en móviles */
     }
 
     .btn, .btn-secondary {
-        padding: 10px; /* Ajustar tamaño de botón */
+        padding: 10px; /* Reduce el tamaño del botón */
+        font-size: 14px; /* Reduce el tamaño de la fuente */
     }
 
-    .or-divider {
-        margin: 10px 0; /* Ajustar margen */
+    .input-group input {
+        padding: 12px; /* Reduce padding del input */
+        font-size: 14px; /* Reduce el tamaño de la fuente */
     }
 
-    .forgot-password, .first-time {
-        font-size: 12px; /* Ajustar tamaño de fuente */
-    }
-
-    .icon {
-        margin: 20px 0; /* Ajustar márgenes en móviles */
-        display: flex;
-        justify-content: center;
-    }
-
-    .checkbox {
-        top: 0; /* Quita el desplazamiento */
+    .forgot-password, .or-divider {
+        font-size: 12px; /* Reduce el tamaño de la fuente */
     }
 }
